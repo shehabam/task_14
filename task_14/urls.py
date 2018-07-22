@@ -22,7 +22,7 @@ from api.views import RestaurantListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
+
     path('restaurants/list/',views.restaurant_list ,name='restaurant-list'),
     path('restaurants/favorite/',views.favorite_restaurants ,name='favorite-restaurant'),
     path('restaurants/<int:restaurant_id>/detail/',views.restaurant_detail ,name='restaurant-detail'),
